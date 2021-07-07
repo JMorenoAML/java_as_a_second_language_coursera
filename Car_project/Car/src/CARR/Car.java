@@ -1,5 +1,10 @@
 package CARR;
 
+/*******************************************
+ *   This app buils a car for an           *
+ *   online order system                   *
+ *******************************************/
+
 public class Car {
     //these are my attributes
     private String make;
@@ -45,7 +50,7 @@ public class Car {
     }
     //this function allows me now to format the output
     public String toString() { 
-        return "Car make:" + make + ", model: " + model + ", Car Year: " + year;
+        return "\nCar make:" + make + ", model: " + model + ", Car Year: " + year;
     } 
     public static void main(String[] args) {
         //TO-DO Auto-generated method sub
@@ -53,8 +58,17 @@ public class Car {
         Car car2 = new Car("Chevy", "Corvette" , 2018); 
         Car car3 = new Car("Jeep", "Rubicon" , 2020);
 
+        Options opt1 = new Options("AM/FM","None","FlexFuel");
+        Options opt2 = new Options("None","standard","Gas");
+        Options opt3 = new Options("satellite","self driving","DualFuel");
+
         System.out.println(car1.toString());
+        System.out.println(opt1.toString());
+
         System.out.println(car2.toString());
+        System.out.println(opt2.toString());
+
         System.out.println(car3.toString());
+        System.out.println(opt3.toString());
     }
 }
